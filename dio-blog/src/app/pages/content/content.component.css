@@ -1,0 +1,26 @@
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover > img{
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 500px;
+    height: 300px;
+    min-height: 300px;
+}
+
+.description > p{
+    color: grey;
+    margin-top: 15px;
+    padding: 0px 100px;
+}
+
+.back-btn {
+    margin: 20px;
+}

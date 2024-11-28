@@ -1,0 +1,13 @@
+.container > ul{
+    display: flex;
+    align-items: center;
+}
+
+
+.container > ul > li{
+    margin-right: 20px;
+}
+
+.container > ul > li:hover{
+    color: grey;
+}

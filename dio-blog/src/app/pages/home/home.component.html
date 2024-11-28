@@ -1,0 +1,9 @@
+<app-menu-title></app-menu-title>
+<div class="container-articles">
+    <div class="articles-main">
+        <app-big-card id="1" />
+    </div>
+    <div class="articles-others" >
+        <li *ngFor="let item of dataContext.slice(1)"><app-small-card id={{item.id}}/></li>
+    </div>
+</div>
