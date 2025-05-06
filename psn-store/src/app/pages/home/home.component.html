@@ -1,0 +1,5 @@
+<div class="container">
+    @for (item of data; track $index) {
+        <app-card [gameCover]="item.gameCover" [gameLabel]="item.gameLabel" [gamePrice]="item.gamePrice" [gameType]="item.gameType"/>
+    }
+</div>
