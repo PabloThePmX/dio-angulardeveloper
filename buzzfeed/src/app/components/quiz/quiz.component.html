@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="logo">
+        <img src="assets/imgs/logo.png" alt="Logo BuzzFeed">
+        <h3>{{title}}</h3>
+    </div>
+
+    @if (!finished) {
+        <div class="questions">
+            <h3>{{questionSelected.question}}</h3>
+        </div>
+        <div class="options">
+            @for(item of questionSelected.options; track item.id){
+                <button class="btn-option" (click)="playerChoice(item.alias)">
+                    {{item.name}}
+                </button>
+            }
+        </div>
+    }
+    @else {
+        <div class="results">
+            @if (!showResult) {
+                <button class="btn-option" (click)="showResult = true">Clique para conferir seu resultado!</button>
+            }
+            @else {
+                <h1>O seu resultado é:</h1>
+                <p style="margin-bottom: 20px;">{{answerSelected}}</p>
+                <button class="btn-option" (click)="refreshComponent()">Jogar Novamente</button>
+            }
+        </div>
+    }
+</div>
